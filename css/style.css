@@ -63,6 +63,19 @@ body, html{
   padding:20px;
 }
 
+.ptext .border .headt{
+  color:#fff;
+  font-size:27px;
+  letter-spacing:8px;
+  text-align:center;
+}
+
+.ptext .border .headp{
+  color:#fff;
+  font-size:14px;
+  text-align:center;
+}
+
 .ptext .border.trans{
   background-color:transparent;
 }
@@ -71,4 +84,26 @@ body, html{
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+}
+
+.nav-div {
+  padding:5px;
+}
+
+.cool-link {
+  display:inline-block;
+  text-decoration:none;
+}
+
+.cool-link::after {
+  content:'';
+  display:block;
+  width:0;
+  height:2px;
+  background:#fff;
+  transition:width .5s;
+}
+
+.cool-link:hover::after {
+  width:100%;
 }
