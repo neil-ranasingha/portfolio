@@ -23,7 +23,7 @@ body, html{
 
 .pimg1{
   background-image:url('../img/img1.jpg');
-  min-height:800px;
+  min-height:700px;
 }
 
 .pimg2{
@@ -36,7 +36,7 @@ body, html{
   min-height:400px;
 }
 
-.section{
+.section-a{
   text-align:center;
   padding:50px 80px;
 }
@@ -60,7 +60,11 @@ body, html{
 .ptext .border{
   background-color:#212121;
   color:#fff;
-  padding:20px;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5px;
+  padding-right:5px;
 }
 
 .ptext .border .headt{
