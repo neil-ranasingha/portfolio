@@ -7,11 +7,6 @@ header, main, footer {
   header, main, footer {
     padding-left: 0;
   }
-  .cv-btn {
-    visibility: hidden;
-    -webkit-transform: translateX(-200%);
-    transform: translateX(-200%);
-  }
 }
 
 .cv-btn {

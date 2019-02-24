@@ -34,8 +34,24 @@
         <i class="large material-icons">menu</i>
       </a>
     </div>
-    <div class="cv-btn">
+    <div class="cv-btn hide-on-med-and-down">
         <a href="resume/Neil_Ranasingha.pdf" class="hoverable btn waves-effect waves-light orange darken-2">Download Resume</a>
+    </div>
+    <div class="fixed-action-btn-1">
+      <a href="#modal1" data-target="modal1" class="btn-floating btn-large modal-trigger orange darken-2">
+        <i class="large material-icons">get_app</i>
+      </a>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 style="letter-spacing:3px; text-transform:uppercase;">Download resume</h4>
+        <p>Click Agree to confirm download of resume (154 KB)</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a href="resume/Neil_Ranasingha.pdf" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
     </div>
     <!--NAVIGATION BAR-->
     <ul id="slide-out" class="center table-of-contents sidenav sidenav-fixed grey darken-4">
@@ -242,6 +258,10 @@
 
     $(document).ready(function () {
       $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function(){
+      $('.modal').modal();
     });
 
     $(document).ready(function () {
