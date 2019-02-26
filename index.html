@@ -35,7 +35,7 @@
       </a>
     </div>
     <div class="cv-btn hide-on-med-and-down">
-        <a href="resume/Neil_Ranasingha.pdf" class="hoverable btn waves-effect waves-light orange darken-2">Download Resume</a>
+        <a href="#modal1" data-target="modal1" class="hoverable btn waves-effect waves-light modal-trigger orange darken-2">Download Resume</a>
     </div>
     <div class="fixed-action-btn-1">
       <a href="#modal1" data-target="modal1" class="btn-floating btn-large modal-trigger orange darken-2">
@@ -111,7 +111,7 @@
     </div>
 
     <div class="parallax-container section scrollSpy" style="height:100%;" id="projects">
-      <div class="parallax"><img src="images/img6.jpg"></div>
+      <div class="parallax"><img src="images/img7.jpg"></div>
       <h1 class="center white-text">Projects</h1>
       <div class="row">
         <!--PROJECT 1-->
@@ -270,7 +270,9 @@
 
     $(document).ready(function () {
       $('.scrollspy').scrollSpy();
+      
     });
+    var instance = M.ScrollSpy.getInstance(elem);
   </script>
 
 </body>
