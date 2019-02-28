@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!--Import Icon Libraries-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/materialize.css">
+  
+  <!--Load favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../favicon/site.webmanifest">
+  <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caesar Cipher</title>
+</head>
+
+<body>
+  <header>
+    <!-- FIXED ACTION BUTTON-->
+    <div class="fixed-action-btn">
+      <a href="#" data-target="slide-out" class="btn-floating btn-large sidenav-trigger grey darken-4">
+        <i class="large material-icons">menu</i>
+      </a>
+    </div>
+    <div class="cv-btn hide-on-med-and-down">
+        <a href="#modal1" data-target="modal1" class="hoverable btn waves-effect waves-light modal-trigger orange darken-2">Download Resume</a>
+    </div>
+    <div class="fixed-action-btn-1">
+      <a href="#modal1" data-target="modal1" class="btn-floating btn-large modal-trigger orange darken-2">
+        <i class="large material-icons">get_app</i>
+      </a>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 style="letter-spacing:3px; text-transform:uppercase;">Download resume</h4>
+        <p>Click Agree to confirm download of resume (154 KB)</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a href="../../resume/Neil_Ranasingha.pdf" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+    <!--NAVIGATION BAR-->
+    <ul id="slide-out" class="center table-of-contents sidenav sidenav-fixed grey darken-4">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img class="responsive-img" src="../../images/temp.jpg">
+          </div>
+          <div class="center">
+            <a href="../../index.html"><img class="responsive-img circle center hoverable" src="../../images/portrait.jpg"></a>
+          </div>
+        </div>
+      </li>
+      <li class=""><a href="../../index.html" class="white-text">Home</a></li>
+      <li class=""><a href="#about" class="white-text">About</a></li>
+      <li class=""><a href="#images" class="white-text">Images</a></li>
+      <li class=""><a href="#lim-imp" class="white-text">Limitations and Improvements</a></li>
+      <li class=""><a href="#contact" class="white-text">Contact</a></li>
+    </ul>
+    
+  </header>
+  <main>
+    <div class="parallax-container" style="height:600px;">
+      <div class="parallax"><img src="../../images/img1.jpg"></div>
+      <!--PORTRAIT-->
+      <div class="profile-pic center">
+        <a href="../../index.html"><img src="../../images/portrait.jpg" alt="Neil Ranasigha" class="hoverable responsive-img circle"></a>
+        <br>
+        <div class="ptext border grey darken-4">
+          <h1 class="headt">Caesar Cipher Program</h1>
+        </div>
+      </div>
+    </div>
+    <!--Github ribbon-->
+    <a href="https://github.com/neil-ranasingha/Portfolio" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    
+    <div class="section scrollSpy" id="about">
+      <h1 class="center grey-text text-darken-4">About</h1>
+      <div class="section grey-text">
+        <div class="row container">
+            <div class="col s8">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
+                  commodi,
+                  fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
+                  praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
+                  inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
+                  placeat
+                  dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
+                  ratione
+                  in.
+                  Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
+                  repellat
+                  quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
+                  omnis!
+                </p>            
+            </div>
+            <div class="col s4 center">
+              <div class="section">
+                <h5>Language</h5>
+                <p>C#</p>
+              </div>
+              <div class="divider"></div>
+              <div class="section">
+                <h5>File Size</h5>
+                <p>21.6Kb</p>
+              </div>
+              <div class="divider"></div>
+              <div class="section">
+                <a href="https://github.com/neil-ranasingha/portfolio" target="-blank" class="hoverable btn-card btn waves-effect waves-light grey darken-4" title="Source Code on GitHub">Source Code <i class="fa fa-github"></i></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section scrollSpy" id="images">
+      <h1 class="center grey-text text-darken-4">Images</h1>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="../../images/img1.jpg" target="-blank"><img class="responsive-img" src="../../images/img1.jpg"></a>
+        <a class="carousel-item" href="../../images/img2.jpg" target="-blank"><img class="responsive-img" src="../../images/img2.jpg"></a>
+        <a class="carousel-item" href="../../images/temp.jpg" target="-blank"><img class="responsive-img" src="../../images/temp.jpg"></a>
+      </div>
+    </div>
+
+    <div class="section scrollSpy" id="lim-imp">
+      <h1 class="center grey-text text-darken-4">Limitations and Improvements</h1>
+      <div class="section grey-text">
+        <div class="row container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
+            commodi,
+            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
+            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
+            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
+            placeat
+            dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
+            ratione
+            in.
+            Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
+            repellat
+            quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
+            omnis!
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section scrollSpy parallax-container" style="height:450px; " id="contact">
+      <div class="parallax"><img src="../../images/img3.jpg"></div>
+      <h1 class="center white-text">Contact me</h1>
+      <div class="card white">
+        <div class="card-content-foot grey-text center">
+          <p>Feel free to contact me by email or LinkedIn</p>
+        </div>
+        <div class="card-action center">
+          <div class="effect varrius center">
+            <div class="buttons">
+              <a href="mailto:miran8r@gmail.com" class="gmail" title="Email me"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="https://github.com/neil-ranasingha/portfolio" target="-blank" class="gitHub" title="GitHub repository"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/neil-ranasingha-5b1698106" target="-blank" class="in" title="Follow me on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/neilranasingha/" target="-blank" class="insta" title="Follow me on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>        
+        </div>
+        <div class="card-content-foot1 grey-text center">
+          <h5>Thank you for visiting!</h5>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../../js/scripts.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Load Scripts-->
+  <script>
+    M.AutoInit()
+
+  </script>
+
+</body>
+
+</html>

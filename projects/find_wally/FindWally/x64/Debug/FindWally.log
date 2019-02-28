@@ -1,0 +1,8 @@
+﻿  MatchImage.cpp
+  Main.cpp
+c:\users\neil\desktop\findwally - neil\findwally(visual studio project files)\findwally\main.cpp(254): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  LargeImage.cpp
+  BaseImage.cpp
+  Generating Code...
+  FindWally.vcxproj -> C:\Users\Neil\Desktop\FindWally - Neil\FindWally(Visual Studio project files)\x64\Debug\FindWally.exe
+  FindWally.vcxproj -> C:\Users\Neil\Desktop\FindWally - Neil\FindWally(Visual Studio project files)\x64\Debug\FindWally.pdb (Full PDB)
