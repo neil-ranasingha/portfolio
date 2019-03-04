@@ -1,0 +1,146 @@
+
+JGNNQ OA PCOG KU PGKN, VJKU KU C VGUV!
+------------------------------------------
+Shift: 1
+------------------------------------------
+
+IFMMP NZ OBNF JT OFJM, UIJT JT B UFTU!
+------------------------------------------
+Shift: 2
+------------------------------------------
+
+HELLO MY NAME IS NEIL, THIS IS A TEST!
+------------------------------------------
+Shift: 3
+------------------------------------------
+
+GDKKN LX MZLD HR MDHK, SGHR HR Z SDRS!
+------------------------------------------
+Shift: 4
+------------------------------------------
+
+FCJJM KW LYKC GQ LCGJ, RFGQ GQ Y RCQR!
+------------------------------------------
+Shift: 5
+------------------------------------------
+
+EBIIL JV KXJB FP KBFI, QEFP FP X QBPQ!
+------------------------------------------
+Shift: 6
+------------------------------------------
+
+DAHHK IU JWIA EO JAEH, PDEO EO W PAOP!
+------------------------------------------
+Shift: 7
+------------------------------------------
+
+CZGGJ HT IVHZ DN IZDG, OCDN DN V OZNO!
+------------------------------------------
+Shift: 8
+------------------------------------------
+
+BYFFI GS HUGY CM HYCF, NBCM CM U NYMN!
+------------------------------------------
+Shift: 9
+------------------------------------------
+
+AXEEH FR GTFX BL GXBE, MABL BL T MXLM!
+------------------------------------------
+Shift: 10
+------------------------------------------
+
+ZWDDG EQ FSEW AK FWAD, LZAK AK S LWKL!
+------------------------------------------
+Shift: 11
+------------------------------------------
+
+YVCCF DP ERDV ZJ EVZC, KYZJ ZJ R KVJK!
+------------------------------------------
+Shift: 12
+------------------------------------------
+
+XUBBE CO DQCU YI DUYB, JXYI YI Q JUIJ!
+------------------------------------------
+Shift: 13
+------------------------------------------
+
+WTAAD BN CPBT XH CTXA, IWXH XH P ITHI!
+------------------------------------------
+Shift: 14
+------------------------------------------
+
+VSZZC AM BOAS WG BSWZ, HVWG WG O HSGH!
+------------------------------------------
+Shift: 15
+------------------------------------------
+
+URYYB ZL ANZR VF ARVY, GUVF VF N GRFG!
+------------------------------------------
+Shift: 16
+------------------------------------------
+
+TQXXA YK ZMYQ UE ZQUX, FTUE UE M FQEF!
+------------------------------------------
+Shift: 17
+------------------------------------------
+
+SPWWZ XJ YLXP TD YPTW, ESTD TD L EPDE!
+------------------------------------------
+Shift: 18
+------------------------------------------
+
+ROVVY WI XKWO SC XOSV, DRSC SC K DOCD!
+------------------------------------------
+Shift: 19
+------------------------------------------
+
+QNUUX VH WJVN RB WNRU, CQRB RB J CNBC!
+------------------------------------------
+Shift: 20
+------------------------------------------
+
+PMTTW UG VIUM QA VMQT, BPQA QA I BMAB!
+------------------------------------------
+Shift: 21
+------------------------------------------
+
+OLSSV TF UHTL PZ ULPS, AOPZ PZ H ALZA!
+------------------------------------------
+Shift: 22
+------------------------------------------
+
+NKRRU SE TGSK OY TKOR, ZNOY OY G ZKYZ!
+------------------------------------------
+Shift: 23
+------------------------------------------
+
+MJQQT RD SFRJ NX SJNQ, YMNX NX F YJXY!
+------------------------------------------
+Shift: 24
+------------------------------------------
+
+LIPPS QC REQI MW RIMP, XLMW MW E XIWX!
+------------------------------------------
+Shift: 25
+------------------------------------------
+
+
+------Decryption------
+HELLO MY NAME IS NEIL, THIS IS A TEST!
+
+Frequency Analysis of encoded text:
+-----------------------------------
+Character: !  Frequency: 3.33%
+Character: ,  Frequency: 3.33%
+Character: B  Frequency: 3.33%
+Character: D  Frequency: 6.67%
+Character: H  Frequency: 13.33%
+Character: K  Frequency: 6.67%
+Character: L  Frequency: 13.33%
+Character: O  Frequency: 10%
+Character: P  Frequency: 6.67%
+Character: Q  Frequency: 6.67%
+Character: R  Frequency: 3.33%
+Character: V  Frequency: 13.33%
+Character: W  Frequency: 10%
+

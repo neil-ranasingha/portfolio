@@ -92,19 +92,20 @@
         <div class="row container">
             <div class="col s8">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-                  commodi,
-                  fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-                  praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-                  inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-                  placeat
-                  dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-                  ratione
-                  in.
-                  Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-                  repellat
-                  quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-                  omnis!
+                  Caesar cipher is an encription technique in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet. This number is then the key that is needed to decypher the encrypted text.
+                  The console program allows for a user to encrypt or decrypt text using the Caesar cipher method. 
+                  <br><br>
+                  The user can either decrypt/encrypt text from a text file or enter their own text and the program 
+                  would perform the decryption/encryption process (shifting), outputting the 25 shifts if decrypting or the encrypted text if encryting.
+                  <br><br>
+                  The shifting is done by firstly converting each character in the text into its ASCII value, for example 65 for 'A'. 
+                  If the character is a letter, the shift count is subtracted/added (depending on decryption/encryption) from the ASCII value. 
+                  Once the shift is completed, the new ASCII key is then converted back to a character, the collection of the shifted characters create the new string.
+                  <br><br>
+                  The program uses a dictionary data structure to store each character and their frequency within the text, this is used to find the most frequent 
+                  chatacter within the text. The letter with the highest frequency is stored separately as it can be used to find the correct shift key to decrypt the encrypted text. 
+                  To find the correct shift key, the program finds the difference between the most common letter and the letter ‘E’, this is because in the English language, the letter ‘E’ is the most commonly occuring. 
+                  Therefore, the difference between the two letters would give the shift key to decrypt the text.
                 </p>            
             </div>
             <div class="col s4 center">
@@ -115,7 +116,7 @@
               <div class="divider"></div>
               <div class="section">
                 <h5>File Size</h5>
-                <p>21.6Kb</p>
+                <p>21.6KB</p>
               </div>
               <div class="divider"></div>
               <div class="section">
@@ -128,10 +129,10 @@
 
     <div class="section scrollSpy" id="images">
       <h1 class="center grey-text text-darken-4">Images</h1>
+      <p class="center grey-text text-darken-4">(Click image to view full size in new tab)</p>
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="../../images/img1.jpg" target="-blank"><img class="responsive-img" src="../../images/img1.jpg"></a>
-        <a class="carousel-item" href="../../images/img2.jpg" target="-blank"><img class="responsive-img" src="../../images/img2.jpg"></a>
-        <a class="carousel-item" href="../../images/temp.jpg" target="-blank"><img class="responsive-img" src="../../images/temp.jpg"></a>
+        <a class="carousel-item" href="../../images/caesar_cipher_1.jpg" target="-blank"><img class="responsive-img" src="../../images/caesar_cipher_1.jpg"></a>
+        <a class="carousel-item" href="../../images/caesar_cipher_2.jpg" target="-blank"><img class="responsive-img" src="../../images/caesar_cipher_2.jpg"></a>
       </div>
     </div>
 
@@ -140,19 +141,7 @@
       <div class="section grey-text">
         <div class="row container">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-            commodi,
-            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-            placeat
-            dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-            ratione
-            in.
-            Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-            repellat
-            quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-            omnis!
+            The main issue with this program is that if you want to decrypt a text that is too short, it may fail to do so because the most common letter won't correspond to the letter 'E'.
           </p>
         </div>
       </div>
@@ -191,6 +180,11 @@
   <script>
     M.AutoInit()
 
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    
   </script>
 
 </body>
