@@ -109,7 +109,8 @@
             this.cb4.FormattingEnabled = true;
             this.cb4.Items.AddRange(new object[] {
             "Assignment",
-            "In-Class Test w/c"});
+            "In-Class Test w/c",
+            "Exam"});
             this.cb4.Location = new System.Drawing.Point(58, 124);
             this.cb4.Name = "cb4";
             this.cb4.Size = new System.Drawing.Size(121, 21);
@@ -130,7 +131,8 @@
             this.cb3.FormattingEnabled = true;
             this.cb3.Items.AddRange(new object[] {
             "Assignment",
-            "In-Class Test w/c"});
+            "In-Class Test w/c",
+            "Exam"});
             this.cb3.Location = new System.Drawing.Point(58, 97);
             this.cb3.Name = "cb3";
             this.cb3.Size = new System.Drawing.Size(121, 21);
@@ -202,7 +204,8 @@
             this.cb2.FormattingEnabled = true;
             this.cb2.Items.AddRange(new object[] {
             "Assignment",
-            "In-Class Test w/c"});
+            "In-Class Test w/c",
+            "Exam"});
             this.cb2.Location = new System.Drawing.Point(58, 70);
             this.cb2.Name = "cb2";
             this.cb2.Size = new System.Drawing.Size(121, 21);
@@ -385,7 +388,8 @@
             this.cb1.FormattingEnabled = true;
             this.cb1.Items.AddRange(new object[] {
             "Assignment",
-            "In-Class Test w/c"});
+            "In-Class Test w/c",
+            "Exam"});
             this.cb1.Location = new System.Drawing.Point(58, 43);
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(121, 21);

@@ -284,6 +284,12 @@
         E9ew//AVxE8OItv/9O/Cf0ck8gud2vKswuxNZgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Assessment Types:
+Assignment - Assignments are projects that require practical work.
+In-Class Test - This is a test that will be completed in class under supervised conditions.
+Exam - An test that will be completed in an examination hall under supervised conditions.</value>
+  </data>
   <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>272, 25</value>
   </metadata>

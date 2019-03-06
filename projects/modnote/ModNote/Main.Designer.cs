@@ -112,9 +112,9 @@
             this.NotesPage.Controls.Add(this.panel1);
             this.NotesPage.Cursor = System.Windows.Forms.Cursors.Default;
             this.NotesPage.Location = new System.Drawing.Point(4, 22);
-            this.NotesPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NotesPage.Margin = new System.Windows.Forms.Padding(2);
             this.NotesPage.Name = "NotesPage";
-            this.NotesPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NotesPage.Padding = new System.Windows.Forms.Padding(2);
             this.NotesPage.Size = new System.Drawing.Size(681, 305);
             this.NotesPage.TabIndex = 7;
             this.NotesPage.Text = "Notes";
@@ -341,9 +341,9 @@
             this.AssessmentsPage.Controls.Add(this.lblAssessments1);
             this.AssessmentsPage.Cursor = System.Windows.Forms.Cursors.Default;
             this.AssessmentsPage.Location = new System.Drawing.Point(4, 22);
-            this.AssessmentsPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AssessmentsPage.Margin = new System.Windows.Forms.Padding(2);
             this.AssessmentsPage.Name = "AssessmentsPage";
-            this.AssessmentsPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AssessmentsPage.Padding = new System.Windows.Forms.Padding(2);
             this.AssessmentsPage.Size = new System.Drawing.Size(681, 305);
             this.AssessmentsPage.TabIndex = 6;
             this.AssessmentsPage.Text = "Assessments";
@@ -354,11 +354,9 @@
             this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 195);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(496, 42);
+            this.label1.Size = new System.Drawing.Size(498, 56);
             this.label1.TabIndex = 39;
-            this.label1.Text = "Assessment Types:\r\nAssignment - Assignments are projects that require practical w" +
-    "ork.\r\nIn-Class Test - This is a test that will be completed in class under super" +
-    "vised conditions.";
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // lblAssessments4
             // 
@@ -442,9 +440,9 @@
             this.ModulesPage.Controls.Add(this.panel2);
             this.ModulesPage.Cursor = System.Windows.Forms.Cursors.Default;
             this.ModulesPage.Location = new System.Drawing.Point(4, 22);
-            this.ModulesPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ModulesPage.Margin = new System.Windows.Forms.Padding(2);
             this.ModulesPage.Name = "ModulesPage";
-            this.ModulesPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ModulesPage.Padding = new System.Windows.Forms.Padding(2);
             this.ModulesPage.Size = new System.Drawing.Size(681, 305);
             this.ModulesPage.TabIndex = 3;
             this.ModulesPage.Text = "Modules";
@@ -659,7 +657,7 @@
             this.TabControl.Controls.Add(this.Exit);
             this.TabControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.TabControl.Location = new System.Drawing.Point(0, 0);
-            this.TabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TabControl.Margin = new System.Windows.Forms.Padding(2);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
             this.TabControl.ShowToolTips = true;
@@ -674,9 +672,9 @@
             this.AboutPage.Controls.Add(this.lblAbout1);
             this.AboutPage.Controls.Add(this.lblAbout2);
             this.AboutPage.Location = new System.Drawing.Point(4, 22);
-            this.AboutPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AboutPage.Margin = new System.Windows.Forms.Padding(2);
             this.AboutPage.Name = "AboutPage";
-            this.AboutPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AboutPage.Padding = new System.Windows.Forms.Padding(2);
             this.AboutPage.Size = new System.Drawing.Size(681, 305);
             this.AboutPage.TabIndex = 8;
             this.AboutPage.Text = "About";
@@ -708,7 +706,7 @@
             // 
             this.Exit.Location = new System.Drawing.Point(4, 22);
             this.Exit.Name = "Exit";
-            this.Exit.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Exit.Padding = new System.Windows.Forms.Padding(3);
             this.Exit.Size = new System.Drawing.Size(681, 305);
             this.Exit.TabIndex = 9;
             this.Exit.Text = "Exit";

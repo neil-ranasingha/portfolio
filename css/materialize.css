@@ -4755,7 +4755,7 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -7531,7 +7531,7 @@ input[type=range]::-ms-thumb {
 .table-of-contents a {
   display: inline-block;
   font-weight: 300;
-  color: #757575;
+  color: #e4d5d5;
   padding-left: 16px;
   height: 1.5rem;
   line-height: 1.5rem;
@@ -7542,7 +7542,7 @@ input[type=range]::-ms-thumb {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 15px;
-  border-left: 1px solid #ee6e73;
+  border-left: 1px solid #f57c00;
 }
 
 .table-of-contents a.active {
@@ -8458,14 +8458,14 @@ input[type=range]::-ms-thumb {
   height: 8px;
   width: 8px;
   margin: 24px 4px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #212121;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   border-radius: 50%;
 }
 
 .carousel .indicators .indicator-item.active {
-  background-color: #fff;
+  background-color: #f57c00;
 }
 
 .carousel.scrolling .carousel-item .materialboxed,

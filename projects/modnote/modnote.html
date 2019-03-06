@@ -92,19 +92,17 @@
         <div class="row container">
             <div class="col s8">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-                  commodi,
-                  fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-                  praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-                  inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-                  placeat
-                  dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-                  ratione
-                  in.
-                  Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-                  repellat
-                  quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-                  omnis!
+                  ModNote is a windows forms application designed to allow users to add, amend or delete data for modules that they may study. 
+                  Once the user has added a module, they can take notes using the application and track assessments for each module.
+                  <br><br>
+                  Once the program is first launched, it will create a folder named "ModNote" in the same directory as the application executable,
+                  this folder will contain subfolders for the module information and notes for each module. The notes themselves are stored as text files so they can be
+                  amended using any text editor if needed. Modules can be amended at any time, assessments can be added by amending the module information.
+                  <br><br>
+                  The assessments for a module have a deadline date, this is checked in the "Assessments" tab, if the due date has passed it will mark it so.
+                  <br>
+                  The notes tab includes a text editor with some basic formatting functions, once notes are complete they can be saved with a custom name or it will be automaticall named.
+                  Other notes can be opened and edited with the editor. Since the text files are saved as rich text format, more advanced formatting is allowed in these notes.
                 </p>            
             </div>
             <div class="col s4 center">
@@ -130,9 +128,11 @@
       <h1 class="center grey-text text-darken-4">Images</h1>
       <p class="center grey-text text-darken-4">(Click image to view full size in new tab)</p>
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="../../images/img1.jpg" target="-blank"><img class="responsive-img" src="../../images/img1.jpg"></a>
-        <a class="carousel-item" href="../../images/img2.jpg" target="-blank"><img class="responsive-img" src="../../images/img2.jpg"></a>
-        <a class="carousel-item" href="../../images/temp.jpg" target="-blank"><img class="responsive-img" src="../../images/temp.jpg"></a>
+        <a class="carousel-item" href="../../images/modnote_1.jpg" target="-blank"><img class="responsive-img" src="../../images/modnote_1.jpg"></a>
+        <a class="carousel-item" href="../../images/modnote_2.jpg" target="-blank"><img class="responsive-img" src="../../images/modnote_2.jpg"></a>
+        <a class="carousel-item" href="../../images/modnote_3.jpg" target="-blank"><img class="responsive-img" src="../../images/modnote_3.jpg"></a>
+        <a class="carousel-item" href="../../images/modnote_4.jpg" target="-blank"><img class="responsive-img" src="../../images/modnote_4.jpg"></a>
+        <a class="carousel-item" href="../../images/modnote_5.jpg" target="-blank"><img class="responsive-img" src="../../images/modnote_5.jpg"></a>
       </div>
     </div>
 
@@ -140,21 +140,18 @@
       <h1 class="center grey-text text-darken-4">Limitations and Improvements</h1>
       <div class="section grey-text">
         <div class="row container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-            commodi,
-            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-            placeat
-            dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-            ratione
-            in.
-            Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-            repellat
-            quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-            omnis!
-          </p>
+          <ul class="collection with-header">
+            <li class="collection-header grey-text text-darken-4"><h4>Limitations</h4></li>
+            <li class="collection-item">- Cannot input more than 4 assessments per module</li>
+            <li class="collection-item">- Cannot change directory of "ModNote" folder</li>
+            <li class="collection-item">- Application has to restart after deleting a module</li>
+            <li class="collection-item">- Normal formatting commands do not function on the text editor like they do in an application like Microsoft Word</li>
+          </ul>
+          <ul class="collection with-header">
+            <li class="collection-header grey-text text-darken-4"><h4>Improvements</h4></li>
+            <li class="collection-item">- Could have an alert to tell you when a assessment is nearing</li>
+            <li class="collection-item">- Could show how many notes each module has saved</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -191,6 +188,11 @@
   <!--Load Scripts-->
   <script>
     M.AutoInit()
+
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
 
   </script>
 

@@ -301,15 +301,14 @@ namespace ModNote
                         {
                             Directory.Delete(filepath, true);
                         }
+                        MessageBox.Show("The Module was deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Application.Restart();
                     }
                     else if (result == DialogResult.No)
                     {
                         filepath = (Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\ModNote\\Modules\\" + CbModules1.Text);
                         MessageBox.Show("The notes have not been deleted. They are located in: " + filepath, "Delete Notes?", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-
-                    MessageBox.Show("The Module was deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Application.Restart();
                 }
             }
             catch

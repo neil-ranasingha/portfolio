@@ -66,7 +66,7 @@
       <li class=""><a href="../../index.html" class="white-text">Home</a></li>
       <li class=""><a href="#about" class="white-text">About</a></li>
       <li class=""><a href="#images" class="white-text">Images</a></li>
-      <li class=""><a href="#lim-imp" class="white-text">Limitations and Improvements</a></li>
+      <li class=""><a href="#lim-imp" class="white-text">Limitations</a></li>
       <li class=""><a href="#contact" class="white-text">Contact</a></li>
     </ul>
     
@@ -137,11 +137,14 @@
     </div>
 
     <div class="section scrollSpy" id="lim-imp">
-      <h1 class="center grey-text text-darken-4">Limitations and Improvements</h1>
+      <h1 class="center grey-text text-darken-4">Limitations</h1>
       <div class="section grey-text">
         <div class="row container">
           <p>
-            The main issue with this program is that if you want to decrypt a text that is too short, it may fail to do so because the most common letter won't correspond to the letter 'E'.
+            The main issue with this program is that if the user wanted to decrypt a text that is too short, it may fail to do so because the most common letter wouldn't correspond to the letter 'E'.
+            <br><br>
+            For example, if the text "hello" were shifted by 3, the result would be "KHOOR". The program will assume the character "O" is the most common and substitute it with "E" giving the result of "AXEEH"
+            when decrypted. 
           </p>
         </div>
       </div>

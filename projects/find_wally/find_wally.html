@@ -90,24 +90,45 @@
       <h1 class="center grey-text text-darken-4">About</h1>
       <div class="section grey-text">
         <div class="row container">
-            <div class="col s8">
+            <div class="row">
+                <h5>Introduction</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-                  commodi,
-                  fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-                  praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-                  inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-                  placeat
-                  dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-                  ratione
-                  in.
-                  Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-                  repellat
-                  quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-                  omnis!
-                </p>            
+                  The main objective of this program is to implement the Nearest-Neighbour Search algorithm. 
+                  We start with a cluttered scene image from a popular series of books called "Where's Wally?", each double-page spread illustration depicted a large amount of people
+                  in which the goal was to find the character "Wally". We also have a template image of Wally himself as presented in the cluttered scene image.
+                  <br><br>
+                  Both images are in a text format where each pixel of the images are represented by a greyscale value between 0 and 255. The program stores this data in pointer arrays 
+                  as it is a fast and efficient method of storing such a large quantity of data.
+                  <br><br>
+                  The program searches through the cluttered scene image to find Wally. To do this, it extracts blocks from the cluttered scene image of the same size as the Wally image, to compare them together. 
+                  A linear search is then used to extract the blocks of data, which sifts through the whole image from the top left to the bottom right.
+                  <br><br>
+                  The user can then select how many blocks of data the linear search should look through by selecting how many pixels to shift each time a block is compared. 
+                  For example, the user can choose to extract the blocks of data every 6 pixels in a row and shift the row by 12 pixels down when it reaches the end, this will decrease accuracy and in turn increase efficiency and speed. 
+                  Whereas, extracting the blocks of data every 1 pixel in a row and shifting the row by 1 pixel down will increase the accuracy but decrease efficiency and speed.
+                  <br><br>
+                  As the program sifts through the data, extracting blocks, it compares the extracted data with the one from the Wally image using the normalised correlation (NC) algorithm. 
+                  This outputs a similarity score ranging between -1 and 1, where 1 represents the highest similarity. Each score is compared with the previous score and the top one will be the most similar to the Wally image. 
+                  The user can also select how many best results they would like to be displayed, the program will output the same amount of NC scores as the number chosen by the user. 
+                  <br><br>
+                </p>
+                <h5>Nearest-Neighbour Search Algorithm</h5>
+                <p>
+                  The normalised correlation (NC) algorithm was used in this program. It compares the data thoroughly by comparing the average sums from each array.
+                  Since the NC algorithm outputs a value between -1 and 1, finding Wally is simple, as he would be in the block of data that has an NC score closest to 1. 
+                  As the linear search sifts through the cluttered scene image comparing new blocks of data to the Wally data every time, the calculated NC score will then be compared with the previous score to check if it is higher or not. 
+                  If the result is higher, the variable that stores the highest score will be replaced, in the end the highest score will be shown.
+                  <br><br>
+                  The algorithm only calculates the data for the extracted block of data which means that calculations for the Wally data do not need to be repeated within the NC algorithm itself and in turn this increases efficiency. 
+                  The calculations also ignore where there are white pixels in the Wally template image provided, this is done for both calculations of the Wally and extracted block of data. 
+                  Therefore, only the pixels where Wally has a grey scale colour other than white are being compared, ignoring all of the other things in the rest of the block.
+                  <br><br>
+                  The overall speed of the whole calculation depends on how many blocks are being compared to Wally, which depends on what the user chooses at the start of the program. 
+                  If they chose to shift the blocks 12 by 6 pixels, there will be around 20,000 blocks to compare with. Whereas is they chose to shift the blocks 1 by 1 pixels, there will be a much larger total of around 710,000 blocks to compare with. 
+                  However, as I mentioned earlier, this would affect the accuracy of the search too since there are more different combinations of pixels in a block, if there are more blocks. 
+                </p>
             </div>
-            <div class="col s4 center">
+            <div class="row center">
               <div class="section">
                 <h5>Language</h5>
                 <p>C++</p>
@@ -116,6 +137,11 @@
               <div class="section">
                 <h5>File Size</h5>
                 <p>155 MB</p>
+              </div>
+              <div class="divider"></div>
+              <div class="section">
+                <h5>Important Note</h5>
+                <p>The greyscale images can be viewed using the IrfanView software available <a href="https://www.irfanview.com/">here</a>.</p>
               </div>
               <div class="divider"></div>
               <div class="section">
@@ -130,9 +156,10 @@
       <h1 class="center grey-text text-darken-4">Images</h1>
       <p class="center grey-text text-darken-4">(Click image to view full size in new tab)</p>
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="../../images/img1.jpg" target="-blank"><img class="responsive-img" src="../../images/img1.jpg"></a>
-        <a class="carousel-item" href="../../images/img2.jpg" target="-blank"><img class="responsive-img" src="../../images/img2.jpg"></a>
-        <a class="carousel-item" href="../../images/temp.jpg" target="-blank"><img class="responsive-img" src="../../images/temp.jpg"></a>
+        <a class="carousel-item tooltipped" data-position="bottom" data-tooltip="Console program" href="../../images/wally_4.jpg" target="-blank"><img class="responsive-img" src="../../images/wally_4.jpg"></a>
+        <a class="carousel-item tooltipped" data-position="bottom" data-tooltip="Full image of cluttered scene" href="../../images/wally_1.jpg" target="-blank"><img class="responsive-img" src="../../images/wally_1.jpg"></a>
+        <a class="carousel-item tooltipped" data-position="bottom" data-tooltip="Template image of Wally" href="../../images/wally_2.jpg" target="-blank"><img class="responsive-img" src="../../images/wally_2.jpg"></a>
+        <a class="carousel-item tooltipped" data-position="bottom" data-tooltip="Result of program" href="../../images/wally_3.jpg" target="-blank"><img class="responsive-img" src="../../images/wally_3.jpg"></a>
       </div>
     </div>
 
@@ -141,19 +168,10 @@
       <div class="section grey-text">
         <div class="row container">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-            commodi,
-            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-            placeat
-            dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-            ratione
-            in.
-            Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-            repellat
-            quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-            omnis!
+            One drawback of the program is that to find a very randomly displaced Wally, the linear search has to shift the block 1 by 1 pixels at a time, which is not time efficient in comparison to the other shifts. 
+            If I were to improve the program, I would want to find a faster way to find a randomly displaced Wally faster. 
+            <br><br>
+            The most important limitation of this program is that you would need a template image of the exact same Wally in the clustered image or it will not function.
           </p>
         </div>
       </div>
@@ -191,6 +209,11 @@
   <!--Load Scripts-->
   <script>
     M.AutoInit()
+
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
 
   </script>
 
