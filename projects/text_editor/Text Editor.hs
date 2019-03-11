@@ -78,8 +78,8 @@ cursorWordRight (Texteditor(l, h, s, b))
 cursorWordLeft :: Texteditor -> Texteditor
 cursorWordLeft (Texteditor (l, h, s, b))
  | l == [] = (Texteditor ([], [], h ++ s, b))
- | (head (reverse l)) == ' ' = (Texteditor (l, [], s, b))
- | otherwise = cursorWordLeft (Texteditor (init l, [], (head (reverse l)) : (h ++ s), b))
+ | (head (reverse l)) == ' ' = (Texteditor ((reverse (tail (reverse l)), [], (head (reverse l)) : (h ++ s), b)))
+ | otherwise = cursorWordLeft (Texteditor ((reverse (tail (reverse l))), [], (head (reverse l)) : (h ++ s), b))
 
 --Move Cursor to Line Start
 --Returns Text Editor with left of cursor, highlight and right of cursor concantenated together, in the right of the cursor

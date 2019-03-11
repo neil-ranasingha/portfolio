@@ -92,19 +92,17 @@
         <div class="row container">
             <div class="col s8">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-                  commodi,
-                  fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-                  praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-                  inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-                  placeat
-                  dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-                  ratione
-                  in.
-                  Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-                  repellat
-                  quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-                  omnis!
+                  The scope of this project was to build a text editor system. The text editor is constructed wholly as a single line of text, therefore there is no character formatting.
+                  <br><br>
+                  The text editor has a data set of "TextEditor" which contains 4 sequences of characters, this means that each sequence of characters represents a part of the text editor:
+                  <br>
+                  <strong>([Left of Cursor], [Highlighted Characters], [Right of Cursor], [Clipboard/Buffer])</strong>
+                  <br>
+                  To initiate the text editor in Haskell, the user types 't' in the console and a text editor is initialised with the following character sequences: 
+                  <br>
+                  <strong>("The cat sat", " on the", " mat.", "NEW TEXT")</strong>.
+                  <br><br>
+                  There are 19 different functions that allow the user to manipulate the text in the text editor, for more detail on each one, read the comments in the Haskell file.
                 </p>            
             </div>
             <div class="col s4 center">
@@ -119,7 +117,7 @@
               </div>
               <div class="divider"></div>
               <div class="section">
-                <a href="https://github.com/neil-ranasingha/portfolio/tree/master/projects/caesar_cipher" target="-blank" class="hoverable btn-card btn waves-effect waves-light grey darken-4" title="Source Code on GitHub">Source Code <i class="fa fa-github"></i></a>
+                <a href="https://github.com/neil-ranasingha/portfolio/tree/master/projects/text_editor" target="-blank" class="hoverable btn-card btn waves-effect waves-light grey darken-4" title="Source Code on GitHub">Source Code <i class="fa fa-github"></i></a>
               </div>
             </div>
         </div>
@@ -130,9 +128,7 @@
       <h1 class="center grey-text text-darken-4">Images</h1>
       <p class="center grey-text text-darken-4">(Click image to view full size in new tab)</p>
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="../../images/img1.jpg" target="-blank"><img class="responsive-img" src="../../images/img1.jpg"></a>
-        <a class="carousel-item" href="../../images/img2.jpg" target="-blank"><img class="responsive-img" src="../../images/img2.jpg"></a>
-        <a class="carousel-item" href="../../images/temp.jpg" target="-blank"><img class="responsive-img" src="../../images/temp.jpg"></a>
+        <a class="carousel-item" href="../../images/text_editor_1.jpg" target="-blank"><img class="responsive-img" src="../../images/text_editor_1.jpg"></a>
       </div>
     </div>
 
@@ -141,19 +137,16 @@
       <div class="section grey-text">
         <div class="row container">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus,
-            commodi,
-            fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum
-            praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates
-            inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat
-            placeat
-            dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus
-            ratione
-            in.
-            Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore
-            repellat
-            quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex,
-            omnis!
+            Since this program was built using Haskell, it is not as easy to do simple functions such as moving a cursor to the left or copying and pasting text, as it is on other text editor programs.
+            <br>
+            The project aims to show that although it is not easy to use, it is possible to create such a program using a functional language like Haskell. 
+            <br><br>
+            If I had to remake this project better I would do it using an object oriented language because there are many useful features O-O has, such as code reuse, 
+            which would make the development of the program much faster.
+            Another great aspect of O-O programming is the use of objects and classes, a class is basically like a blueprint
+            of the objects that are contained within it, you will be able to describe what the objects are as well as make
+            them carry out functions. With the ability to create objects, a GUI can also be constructed for the text editor,
+            this can be made simple and clear so that the construction workers can record their evaluations with ease.
           </p>
         </div>
       </div>
@@ -192,6 +185,11 @@
   <script>
     M.AutoInit()
 
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  
   </script>
 
 </body>
