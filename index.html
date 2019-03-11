@@ -64,10 +64,10 @@
           </div>
         </div>
       </li>
-      <li class=""><a href="#about" class="white-text">About me</a></li>
-      <li class=""><a href="#projects" class="white-text">Projects</a></li>
-      <li class=""><a href="#future" class="white-text">Current/Future projects</a></li>
-      <li class=""><a href="#contact" class="white-text">Contact</a></li>
+      <li class=""><a href="#about" class="sidenav-close white-text">About me</a></li>
+      <li class=""><a href="#projects" class="sidenav-close white-text">Projects</a></li>
+      <li class=""><a href="#future" class="sidenav-close white-text">Current/Future projects</a></li>
+      <li class=""><a href="#contact" class="sidenav-close white-text">Contact</a></li>
     </ul>
     
   </header>
@@ -219,7 +219,7 @@
             <div class="card white hoverable">
               <div class="card-image">
                 <img class="responsive-img card-img" src="images/code.jpg">
-                <span class="card-title grey-text text-darken-4">Android Location App</span>
+                <span class="card-title">Android Location App</span>
               </div>
               <div class="card-content grey-text">
                 <p>
@@ -232,7 +232,7 @@
             <div class="card white hoverable">
               <div class="card-image">
                 <img class="responsive-img card-img" src="images/code.jpg">
-                <span class="card-title grey-text text-darken-4">Cross-Platform Food Recommendation app</span>
+                <span class="card-title">Cross-Platform Food Recommendation app</span>
               </div>
               <div class="card-content grey-text">
                 <p>
@@ -245,7 +245,7 @@
             <div class="card white hoverable">
               <div class="card-image">
                 <img class="responsive-img card-img" src="images/code.jpg">
-                <span class="card-title grey-text text-darken-4">Maze Solver Program</span>
+                <span class="card-title">Maze Solver Program</span>
               </div>
               <div class="card-content grey-text">
                 <p>
@@ -289,8 +289,11 @@
   <!--Initialising Materialize Scripts-->
   <script>
     M.AutoInit()
-  </script>
 
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 
 </html>
