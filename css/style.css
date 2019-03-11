@@ -22,6 +22,16 @@ header, main, footer {
   }
 }
 
+.code-icon {
+  font-size: 22px;
+  background-color: #212121;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
 .cv-btn {
   position: fixed;
   left: 57px;
